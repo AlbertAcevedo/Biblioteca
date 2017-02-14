@@ -16,6 +16,7 @@ public class Biblioteca {
     ArrayList<Libro> libros;
     ArrayList<Autor> autores;
     ArrayList<Usuario> usuarios;
+    ArrayList<Review> reviews;
 
     public Biblioteca() {
         libros = new ArrayList<>();
@@ -42,8 +43,19 @@ public class Biblioteca {
         usuarios.add(u);
     }
 
-    public static void main(String[] args) {
+    public void registrarReviewL(Review r, int id, String review) {
+        Review rev = new Review(id, review);
+        r.setRLibro();
+    }
+    
+        public void registrarReviewA(Review r, int id, String review) {
+        Review rev = new Review(id, review);
+        r.setRAutor();
+    }
 
+    public static void main(String[] args) {
+        ArrayList<Biblioteca> btc
+                = new ArrayList();
     }
 
 }

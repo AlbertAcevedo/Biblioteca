@@ -13,11 +13,42 @@ import java.util.ArrayList;
  */
 public class Review {
 
-    ArrayList<Libro> libros;
-    ArrayList<Autor> autores;
+    private int id;
+    private String review;
+    ArrayList<Integer> libros;
+    ArrayList<Integer> autores;
+    ArrayList<String> reviewsl;
+    ArrayList<String> reviewsa;
 
-    public Review() {
-        libros = new ArrayList<>();
-        autores = new ArrayList<>();
+    public Review(int id, String review) {
+        this.id = id;
+        this.review = review;
     }
+
+    public void setRLibro() {
+        libros.add(id);
+        reviewsl.add(review);
+    }
+
+    public void setRAutor() {
+        autores.add(id);
+        reviewsa.add(review);
+    }
+
+    public ArrayList<Integer> getLibros() {
+        return libros;
+    }
+
+    public ArrayList<Integer> getAutores() {
+        return autores;
+    }
+
+    public ArrayList<String> getReviewsl() {
+        return reviewsl;
+    }
+
+    public ArrayList<String> getReviewsa() {
+        return reviewsa;
+    }
+
 }
